@@ -1,0 +1,23 @@
+
+# Consider dependencies only in project.
+set(CMAKE_DEPENDS_IN_PROJECT_ONLY OFF)
+
+# The set of languages for which implicit dependencies are needed:
+set(CMAKE_DEPENDS_LANGUAGES
+  )
+
+# The set of dependency files which are needed:
+set(CMAKE_DEPENDS_DEPENDENCY_FILES
+  "/home/nexusjetson/bounding_boxes/src/lidar_detection/src/pcl_bounding_box/bounding_box.cpp" "CMakeFiles/bounding_box_node.dir/src/pcl_bounding_box/bounding_box.cpp.o" "gcc" "CMakeFiles/bounding_box_node.dir/src/pcl_bounding_box/bounding_box.cpp.o.d"
+  "/home/nexusjetson/bounding_boxes/src/lidar_detection/src/pcl_bounding_box/node.cpp" "CMakeFiles/bounding_box_node.dir/src/pcl_bounding_box/node.cpp.o" "gcc" "CMakeFiles/bounding_box_node.dir/src/pcl_bounding_box/node.cpp.o.d"
+  "/home/nexusjetson/bounding_boxes/src/lidar_detection/src/pcl_cluster_extraction/cluster_extraction.cpp" "CMakeFiles/bounding_box_node.dir/src/pcl_cluster_extraction/cluster_extraction.cpp.o" "gcc" "CMakeFiles/bounding_box_node.dir/src/pcl_cluster_extraction/cluster_extraction.cpp.o.d"
+  "/home/nexusjetson/bounding_boxes/src/lidar_detection/src/pcl_ground_removal/ground_removal.cpp" "CMakeFiles/bounding_box_node.dir/src/pcl_ground_removal/ground_removal.cpp.o" "gcc" "CMakeFiles/bounding_box_node.dir/src/pcl_ground_removal/ground_removal.cpp.o.d"
+  "/home/nexusjetson/bounding_boxes/src/lidar_detection/src/pcl_preprocessor/filter.cpp" "CMakeFiles/bounding_box_node.dir/src/pcl_preprocessor/filter.cpp.o" "gcc" "CMakeFiles/bounding_box_node.dir/src/pcl_preprocessor/filter.cpp.o.d"
+  )
+
+# Targets to which this target links.
+set(CMAKE_TARGET_LINKED_INFO_FILES
+  )
+
+# Fortran module output directory.
+set(CMAKE_Fortran_TARGET_MODULE_DIR "")

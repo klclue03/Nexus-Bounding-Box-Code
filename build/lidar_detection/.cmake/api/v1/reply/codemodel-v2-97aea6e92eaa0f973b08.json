@@ -1,0 +1,115 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-423726de3151175f33ce.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6
+					]
+				}
+			],
+			"name" : "",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "lidar_detection",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "bounding_box_node::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-bounding_box_node-8ff4d0686b13b96f245a.json",
+					"name" : "bounding_box_node",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "cluster_extraction_node::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-cluster_extraction_node-a78c423be5c947e51be9.json",
+					"name" : "cluster_extraction_node",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ground_removal_node::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ground_removal_node-ca76985d4cce23d39245.json",
+					"name" : "ground_removal_node",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "lidar_detection_uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-lidar_detection_uninstall-2ad4a6ed4cffb7dd9eeb.json",
+					"name" : "lidar_detection_uninstall",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "preprocessor_node::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-preprocessor_node-0627ea936dde5738bded.json",
+					"name" : "preprocessor_node",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "test_node::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-test_node-cea836a65027ac5393ed.json",
+					"name" : "test_node",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-uninstall-a568da44897de8d771af.json",
+					"name" : "uninstall",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/nexusjetson/bounding_boxes/build/lidar_detection",
+		"source" : "/home/nexusjetson/bounding_boxes/src/lidar_detection"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 3
+	}
+}

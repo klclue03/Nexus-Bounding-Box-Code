@@ -1,0 +1,14 @@
+/home/nexusjetson/bounding_boxes/build/lidar_detection/CMakeFiles/uninstall.dir
+/home/nexusjetson/bounding_boxes/build/lidar_detection/CMakeFiles/lidar_detection_uninstall.dir
+/home/nexusjetson/bounding_boxes/build/lidar_detection/CMakeFiles/test_node.dir
+/home/nexusjetson/bounding_boxes/build/lidar_detection/CMakeFiles/preprocessor_node.dir
+/home/nexusjetson/bounding_boxes/build/lidar_detection/CMakeFiles/ground_removal_node.dir
+/home/nexusjetson/bounding_boxes/build/lidar_detection/CMakeFiles/cluster_extraction_node.dir
+/home/nexusjetson/bounding_boxes/build/lidar_detection/CMakeFiles/bounding_box_node.dir
+/home/nexusjetson/bounding_boxes/build/lidar_detection/CMakeFiles/test.dir
+/home/nexusjetson/bounding_boxes/build/lidar_detection/CMakeFiles/edit_cache.dir
+/home/nexusjetson/bounding_boxes/build/lidar_detection/CMakeFiles/rebuild_cache.dir
+/home/nexusjetson/bounding_boxes/build/lidar_detection/CMakeFiles/list_install_components.dir
+/home/nexusjetson/bounding_boxes/build/lidar_detection/CMakeFiles/install.dir
+/home/nexusjetson/bounding_boxes/build/lidar_detection/CMakeFiles/install/local.dir
+/home/nexusjetson/bounding_boxes/build/lidar_detection/CMakeFiles/install/strip.dir

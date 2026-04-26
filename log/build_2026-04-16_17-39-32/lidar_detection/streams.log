@@ -1,0 +1,39 @@
+[0.109s] Invoking command in '/home/nexusjetson/bounding_boxes/build/lidar_detection': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/nexusjetson/bounding_boxes/build/lidar_detection -- -j6 -l6
+[0.401s] [ 10%] Built target test_node
+[0.414s] [35m[1mConsolidate compiler generated dependencies of target bounding_box_node[0m
+[0.443s] [ 25%] Built target preprocessor_node
+[0.456s] [ 45%] Built target ground_removal_node
+[0.483s] [ 50%] [32mBuilding CXX object CMakeFiles/cluster_extraction_node.dir/src/pcl_cluster_extraction/cluster_extraction.cpp.o[0m
+[0.484s] [ 55%] [32mBuilding CXX object CMakeFiles/cluster_extraction_node.dir/src/pcl_cluster_extraction/node.cpp.o[0m
+[0.600s] [ 60%] [32mBuilding CXX object CMakeFiles/bounding_box_node.dir/src/pcl_bounding_box/node.cpp.o[0m
+[0.604s] [ 65%] [32mBuilding CXX object CMakeFiles/bounding_box_node.dir/src/pcl_cluster_extraction/cluster_extraction.cpp.o[0m
+[39.659s] [ 70%] [32m[1mLinking CXX executable cluster_extraction_node[0m
+[41.939s] [ 75%] [32m[1mLinking CXX executable bounding_box_node[0m
+[45.814s] [ 85%] Built target cluster_extraction_node
+[46.398s] [100%] Built target bounding_box_node
+[46.450s] Invoked command in '/home/nexusjetson/bounding_boxes/build/lidar_detection' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/nexusjetson/bounding_boxes/build/lidar_detection -- -j6 -l6
+[46.501s] Invoking command in '/home/nexusjetson/bounding_boxes/build/lidar_detection': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/nexusjetson/bounding_boxes/build/lidar_detection
+[46.511s] -- Install configuration: ""
+[46.514s] -- Up-to-date: /home/nexusjetson/bounding_boxes/install/lidar_detection/lib/lidar_detection/test_node
+[46.517s] -- Up-to-date: /home/nexusjetson/bounding_boxes/install/lidar_detection/lib/lidar_detection/preprocessor_node
+[46.519s] -- Up-to-date: /home/nexusjetson/bounding_boxes/install/lidar_detection/lib/lidar_detection/ground_removal_node
+[46.522s] -- Installing: /home/nexusjetson/bounding_boxes/install/lidar_detection/lib/lidar_detection/cluster_extraction_node
+[46.536s] -- Set runtime path of "/home/nexusjetson/bounding_boxes/install/lidar_detection/lib/lidar_detection/cluster_extraction_node" to ""
+[46.536s] -- Installing: /home/nexusjetson/bounding_boxes/install/lidar_detection/lib/lidar_detection/bounding_box_node
+[46.553s] -- Set runtime path of "/home/nexusjetson/bounding_boxes/install/lidar_detection/lib/lidar_detection/bounding_box_node" to ""
+[46.553s] -- Up-to-date: /home/nexusjetson/bounding_boxes/install/lidar_detection/share/ament_index/resource_index/package_run_dependencies/lidar_detection
+[46.553s] -- Up-to-date: /home/nexusjetson/bounding_boxes/install/lidar_detection/share/ament_index/resource_index/parent_prefix_path/lidar_detection
+[46.563s] -- Up-to-date: /home/nexusjetson/bounding_boxes/install/lidar_detection/share/lidar_detection/environment/ament_prefix_path.sh
+[46.564s] -- Up-to-date: /home/nexusjetson/bounding_boxes/install/lidar_detection/share/lidar_detection/environment/ament_prefix_path.dsv
+[46.565s] -- Up-to-date: /home/nexusjetson/bounding_boxes/install/lidar_detection/share/lidar_detection/environment/path.sh
+[46.566s] -- Up-to-date: /home/nexusjetson/bounding_boxes/install/lidar_detection/share/lidar_detection/environment/path.dsv
+[46.566s] -- Up-to-date: /home/nexusjetson/bounding_boxes/install/lidar_detection/share/lidar_detection/local_setup.bash
+[46.566s] -- Up-to-date: /home/nexusjetson/bounding_boxes/install/lidar_detection/share/lidar_detection/local_setup.sh
+[46.567s] -- Up-to-date: /home/nexusjetson/bounding_boxes/install/lidar_detection/share/lidar_detection/local_setup.zsh
+[46.567s] -- Up-to-date: /home/nexusjetson/bounding_boxes/install/lidar_detection/share/lidar_detection/local_setup.dsv
+[46.567s] -- Installing: /home/nexusjetson/bounding_boxes/install/lidar_detection/share/lidar_detection/package.dsv
+[46.567s] -- Up-to-date: /home/nexusjetson/bounding_boxes/install/lidar_detection/share/ament_index/resource_index/packages/lidar_detection
+[46.567s] -- Up-to-date: /home/nexusjetson/bounding_boxes/install/lidar_detection/share/lidar_detection/cmake/lidar_detectionConfig.cmake
+[46.568s] -- Up-to-date: /home/nexusjetson/bounding_boxes/install/lidar_detection/share/lidar_detection/cmake/lidar_detectionConfig-version.cmake
+[46.568s] -- Up-to-date: /home/nexusjetson/bounding_boxes/install/lidar_detection/share/lidar_detection/package.xml
+[46.573s] Invoked command in '/home/nexusjetson/bounding_boxes/build/lidar_detection' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/nexusjetson/bounding_boxes/build/lidar_detection
