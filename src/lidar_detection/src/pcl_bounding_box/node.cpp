@@ -1,6 +1,10 @@
 #include "rclcpp/rclcpp.hpp"
 #include "sensor_msgs/msg/point_cloud2.hpp"
 #include "visualization_msgs/msg/marker_array.hpp"
+#include <algorithm>
+#include <cmath>
+#include <limits>
+#include <pcl_conversions/pcl_conversions.h>
 #include "cluster_extraction.hpp"
 #include "bounding_box.hpp"
 
@@ -36,7 +40,7 @@ public:
       ground_removal_ = std::make_shared<GroundRemoval>(0.01);
 
       // Initialize the ClusterExtraction class
-      cluster_extraction_ = std::make_shared<ClusterExtraction>(0.2, 5, 200);
+      cluster_extraction_ = std::make_shared<ClusterExtraction>(0.2, 5, std::numeric_limits<int>::max());
 
       // Initialize the BoundingBox class
       bounding_box_ = std::make_shared<BoundingBox>();
@@ -61,19 +65,68 @@ private:
             
             // auto cloud_filtered = cloud;
 
-            // Perform cluster extraction
+            // Perform cluster extraction (no upper size limit, so oversized clusters can be reported below)
             auto clusters = cluster_extraction_->extractClusters(cloud_filtered);
 
-            // Create a MarkerArray for bounding boxes
+            // Create a MarkerArray for bounding boxes, clearing boxes left over from the previous frame
             visualization_msgs::msg::MarkerArray marker_array;
+            visualization_msgs::msg::Marker clear_marker;
+            clear_marker.header = msg->header;
+            clear_marker.action = visualization_msgs::msg::Marker::DELETEALL;
+            marker_array.markers.push_back(clear_marker);
+
+            // Debug cloud: accepted clusters get a distinct color each, rejected clusters are red
+            pcl::PointCloud<pcl::PointXYZRGB> debug_cloud;
+            size_t num_rejected = 0;
 
             // Process each cluster
             for (size_t i = 0; i < clusters.size(); ++i)
             {
-                // Create a bounding box for each cluster
-                auto marker = bounding_box_->createBoundingBoxMarker(clusters[i], msg->header, i);
-                marker_array.markers.push_back(marker);
+                const auto &cluster = clusters[i];
+                Eigen::Vector4f min_pt, max_pt;
+                pcl::getMinMax3D(*cluster, min_pt, max_pt);
+                Eigen::Vector4f center = (min_pt + max_pt) / 2.0f;
+                bool rejected = static_cast<int>(cluster->size()) > max_cluster_points_;
+
+                RCLCPP_INFO(this->get_logger(),
+                    "Cluster %zu: %zu points, %.2f m away, size %.2f x %.2f x %.2f m%s",
+                    i, cluster->size(), center.head<3>().norm(),
+                    max_pt.x() - min_pt.x(), max_pt.y() - min_pt.y(), max_pt.z() - min_pt.z(),
+                    rejected ? "  -> REJECTED (too many points)" : "");
+
+                uint8_t r = 255, g = 0, b = 0;
+                if (!rejected)
+                {
+                    // Create a bounding box for each cluster
+                    auto marker = bounding_box_->createBoundingBoxMarker(cluster, msg->header, i);
+                    marker_array.markers.push_back(marker);
+
+                    // Golden-ratio hue spacing keeps neighbouring cluster colors distinct (and away from pure red)
+                    float hue = std::fmod(0.3f + i * 0.618f, 0.75f) + 0.1f;
+                    r = static_cast<uint8_t>(255 * std::clamp(std::abs(hue * 6 - 3) - 1, 0.0f, 1.0f));
+                    g = static_cast<uint8_t>(255 * std::clamp(2 - std::abs(hue * 6 - 2), 0.0f, 1.0f));
+                    b = static_cast<uint8_t>(255 * std::clamp(2 - std::abs(hue * 6 - 4), 0.0f, 1.0f));
+                }
+                else
+                {
+                    ++num_rejected;
+                }
+
+                for (const auto &p : cluster->points)
+                {
+                    pcl::PointXYZRGB cp(r, g, b);
+                    cp.x = p.x; cp.y = p.y; cp.z = p.z;
+                    debug_cloud.push_back(cp);
+                }
             }
+
+            RCLCPP_INFO(this->get_logger(), "%zu clusters, %zu rejected", clusters.size(), num_rejected);
+
+            // Publish the colored clusters for inspection in RViz
+            sensor_msgs::msg::PointCloud2 debug_msg;
+            pcl::toROSMsg(debug_cloud, debug_msg);
+            debug_msg.header = msg->header;
+            publisher_->publish(debug_msg);
 
             // Publish the bounding boxes
             marker_publisher_->publish(marker_array);
@@ -91,6 +144,7 @@ private:
     std::shared_ptr<GroundRemoval> ground_removal_;         // Assuming GroundRemoval is defined elsewhere
     std::shared_ptr<ClusterExtraction> cluster_extraction_; // ClusterExtraction instance
     std::shared_ptr<BoundingBox> bounding_box_;             // BoundingBox instance
+    int max_cluster_points_ = 2500;                         // Clusters larger than this get no bounding box
 };
 
 int main(int argc, char **argv)

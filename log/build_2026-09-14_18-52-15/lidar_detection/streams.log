@@ -1,0 +1,34 @@
+[0.054s] Invoking command in '/home/nexusjetson/bounding_boxes/build/lidar_detection': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/nexusjetson/bounding_boxes/build/lidar_detection -- -j6 -l6
+[0.283s] [ 10%] Built target test_node
+[0.313s] [ 25%] Built target preprocessor_node
+[0.323s] [ 50%] Built target cluster_extraction_node
+[0.326s] Consolidate compiler generated dependencies of target bounding_box_node
+[0.335s] [ 70%] Built target ground_removal_node
+[0.389s] [ 75%] Building CXX object CMakeFiles/bounding_box_node.dir/src/pcl_bounding_box/node.cpp.o
+[41.907s] [ 80%] Linking CXX executable bounding_box_node
+[47.958s] [100%] Built target bounding_box_node
+[47.995s] Invoked command in '/home/nexusjetson/bounding_boxes/build/lidar_detection' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/nexusjetson/bounding_boxes/build/lidar_detection -- -j6 -l6
+[48.030s] Invoking command in '/home/nexusjetson/bounding_boxes/build/lidar_detection': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/nexusjetson/bounding_boxes/build/lidar_detection
+[48.057s] -- Install configuration: ""
+[48.058s] -- Up-to-date: /home/nexusjetson/bounding_boxes/install/lidar_detection/lib/lidar_detection/test_node
+[48.062s] -- Up-to-date: /home/nexusjetson/bounding_boxes/install/lidar_detection/lib/lidar_detection/preprocessor_node
+[48.062s] -- Up-to-date: /home/nexusjetson/bounding_boxes/install/lidar_detection/lib/lidar_detection/ground_removal_node
+[48.063s] -- Up-to-date: /home/nexusjetson/bounding_boxes/install/lidar_detection/lib/lidar_detection/cluster_extraction_node
+[48.063s] -- Installing: /home/nexusjetson/bounding_boxes/install/lidar_detection/lib/lidar_detection/bounding_box_node
+[48.079s] -- Set runtime path of "/home/nexusjetson/bounding_boxes/install/lidar_detection/lib/lidar_detection/bounding_box_node" to ""
+[48.079s] -- Up-to-date: /home/nexusjetson/bounding_boxes/install/lidar_detection/share/ament_index/resource_index/package_run_dependencies/lidar_detection
+[48.080s] -- Up-to-date: /home/nexusjetson/bounding_boxes/install/lidar_detection/share/ament_index/resource_index/parent_prefix_path/lidar_detection
+[48.080s] -- Up-to-date: /home/nexusjetson/bounding_boxes/install/lidar_detection/share/lidar_detection/environment/ament_prefix_path.sh
+[48.080s] -- Up-to-date: /home/nexusjetson/bounding_boxes/install/lidar_detection/share/lidar_detection/environment/ament_prefix_path.dsv
+[48.080s] -- Up-to-date: /home/nexusjetson/bounding_boxes/install/lidar_detection/share/lidar_detection/environment/path.sh
+[48.080s] -- Up-to-date: /home/nexusjetson/bounding_boxes/install/lidar_detection/share/lidar_detection/environment/path.dsv
+[48.081s] -- Up-to-date: /home/nexusjetson/bounding_boxes/install/lidar_detection/share/lidar_detection/local_setup.bash
+[48.081s] -- Up-to-date: /home/nexusjetson/bounding_boxes/install/lidar_detection/share/lidar_detection/local_setup.sh
+[48.081s] -- Up-to-date: /home/nexusjetson/bounding_boxes/install/lidar_detection/share/lidar_detection/local_setup.zsh
+[48.081s] -- Up-to-date: /home/nexusjetson/bounding_boxes/install/lidar_detection/share/lidar_detection/local_setup.dsv
+[48.081s] -- Installing: /home/nexusjetson/bounding_boxes/install/lidar_detection/share/lidar_detection/package.dsv
+[48.082s] -- Up-to-date: /home/nexusjetson/bounding_boxes/install/lidar_detection/share/ament_index/resource_index/packages/lidar_detection
+[48.082s] -- Up-to-date: /home/nexusjetson/bounding_boxes/install/lidar_detection/share/lidar_detection/cmake/lidar_detectionConfig.cmake
+[48.082s] -- Up-to-date: /home/nexusjetson/bounding_boxes/install/lidar_detection/share/lidar_detection/cmake/lidar_detectionConfig-version.cmake
+[48.082s] -- Up-to-date: /home/nexusjetson/bounding_boxes/install/lidar_detection/share/lidar_detection/package.xml
+[48.086s] Invoked command in '/home/nexusjetson/bounding_boxes/build/lidar_detection' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/nexusjetson/bounding_boxes/build/lidar_detection
