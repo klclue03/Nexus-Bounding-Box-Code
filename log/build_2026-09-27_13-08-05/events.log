@@ -1,0 +1,313 @@
+[0.000000] (-) TimerEvent: {}
+[0.001351] (lidar_detection) JobQueued: {'identifier': 'lidar_detection', 'dependencies': OrderedDict()}
+[0.001770] (lidar_detection) JobStarted: {'identifier': 'lidar_detection'}
+[0.025498] (lidar_detection) JobProgress: {'identifier': 'lidar_detection', 'progress': 'cmake'}
+[0.028575] (lidar_detection) JobProgress: {'identifier': 'lidar_detection', 'progress': 'build'}
+[0.030915] (lidar_detection) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/nexusjetson/bounding_boxes/build/lidar_detection', '--', '-j6', '-l6'], 'cwd': '/home/nexusjetson/bounding_boxes/build/lidar_detection', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'nexusjetson'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/nexusjetson'), ('OLDPWD', '/home/nexusjetson'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/terminator.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('MANAGERPID', '2288'), ('SYSTEMD_EXEC_PID', '2455'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator23558193cd9818af7fe4d2c2f5bd9d00f'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '2936'), ('IM_CONFIG_PHASE', '1'), ('COLCON_PREFIX_PATH', '/home/nexusjetson/bounding_boxes/install'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'nexusjetson'), ('JOURNAL_STREAM', '8:45548'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'nexusjetson'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/humble/bin:/home/nexusjetson/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/nexusjetson-desktop:@/tmp/.ICE-unix/2432,unix/nexusjetson-desktop:/tmp/.ICE-unix/2432'), ('INVOCATION_ID', 'c85af56cf1994d8ba328a9de623de19d'), ('XDG_MENU_PREFIX', 'gnome-'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':1'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('IBUS_DISABLE_SNOOPER', '1'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/nexusjetson/bounding_boxes/install/lidar_detection:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('TERMINATOR_UUID', 'urn:uuid:fa715934-2b1c-4ae2-a801-408f7eb2f8f7'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/nexusjetson/bounding_boxes/build/lidar_detection'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/nexusjetson/bounding_boxes/install/lidar_detection:/opt/ros/humble')]), 'shell': False}
+[0.099071] (-) TimerEvent: {}
+[0.200206] (-) TimerEvent: {}
+[0.224713] (lidar_detection) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target bounding_box_node\x1b[0m\n'}
+[0.230529] (lidar_detection) StdoutLine: {'line': b'[ 10%] Built target test_node\n'}
+[0.269352] (lidar_detection) StdoutLine: {'line': b'[ 40%] Built target preprocessor_node\n'}
+[0.270170] (lidar_detection) StdoutLine: {'line': b'[ 45%] Built target ground_removal_node\n'}
+[0.287639] (lidar_detection) StdoutLine: {'line': b'[ 70%] Built target cluster_extraction_node\n'}
+[0.300280] (-) TimerEvent: {}
+[0.339463] (lidar_detection) StdoutLine: {'line': b'[ 75%] \x1b[32mBuilding CXX object CMakeFiles/bounding_box_node.dir/src/pcl_bounding_box/node.cpp.o\x1b[0m\n'}
+[0.400593] (-) TimerEvent: {}
+[0.502190] (-) TimerEvent: {}
+[0.603410] (-) TimerEvent: {}
+[0.704475] (-) TimerEvent: {}
+[0.805312] (-) TimerEvent: {}
+[0.906464] (-) TimerEvent: {}
+[1.007664] (-) TimerEvent: {}
+[1.108820] (-) TimerEvent: {}
+[1.209952] (-) TimerEvent: {}
+[1.311091] (-) TimerEvent: {}
+[1.412252] (-) TimerEvent: {}
+[1.513433] (-) TimerEvent: {}
+[1.614575] (-) TimerEvent: {}
+[1.715808] (-) TimerEvent: {}
+[1.816933] (-) TimerEvent: {}
+[1.918052] (-) TimerEvent: {}
+[2.019210] (-) TimerEvent: {}
+[2.120341] (-) TimerEvent: {}
+[2.221466] (-) TimerEvent: {}
+[2.322579] (-) TimerEvent: {}
+[2.423803] (-) TimerEvent: {}
+[2.524931] (-) TimerEvent: {}
+[2.626084] (-) TimerEvent: {}
+[2.727292] (-) TimerEvent: {}
+[2.828409] (-) TimerEvent: {}
+[2.929558] (-) TimerEvent: {}
+[3.030703] (-) TimerEvent: {}
+[3.131939] (-) TimerEvent: {}
+[3.233094] (-) TimerEvent: {}
+[3.334227] (-) TimerEvent: {}
+[3.435424] (-) TimerEvent: {}
+[3.541089] (-) TimerEvent: {}
+[3.642433] (-) TimerEvent: {}
+[3.744005] (-) TimerEvent: {}
+[3.845421] (-) TimerEvent: {}
+[3.946844] (-) TimerEvent: {}
+[4.048381] (-) TimerEvent: {}
+[4.149581] (-) TimerEvent: {}
+[4.250428] (-) TimerEvent: {}
+[4.351624] (-) TimerEvent: {}
+[4.452496] (-) TimerEvent: {}
+[4.553658] (-) TimerEvent: {}
+[4.654829] (-) TimerEvent: {}
+[4.756006] (-) TimerEvent: {}
+[4.857214] (-) TimerEvent: {}
+[4.958235] (-) TimerEvent: {}
+[5.059221] (-) TimerEvent: {}
+[5.160007] (-) TimerEvent: {}
+[5.260891] (-) TimerEvent: {}
+[5.362235] (-) TimerEvent: {}
+[5.463416] (-) TimerEvent: {}
+[5.565302] (-) TimerEvent: {}
+[5.666771] (-) TimerEvent: {}
+[5.768501] (-) TimerEvent: {}
+[5.869938] (-) TimerEvent: {}
+[5.971272] (-) TimerEvent: {}
+[6.072676] (-) TimerEvent: {}
+[6.173939] (-) TimerEvent: {}
+[6.275281] (-) TimerEvent: {}
+[6.376566] (-) TimerEvent: {}
+[6.477879] (-) TimerEvent: {}
+[6.579251] (-) TimerEvent: {}
+[6.680819] (-) TimerEvent: {}
+[6.782202] (-) TimerEvent: {}
+[6.883394] (-) TimerEvent: {}
+[6.984761] (-) TimerEvent: {}
+[7.086309] (-) TimerEvent: {}
+[7.187638] (-) TimerEvent: {}
+[7.288878] (-) TimerEvent: {}
+[7.390192] (-) TimerEvent: {}
+[7.491504] (-) TimerEvent: {}
+[7.592792] (-) TimerEvent: {}
+[7.694078] (-) TimerEvent: {}
+[7.795379] (-) TimerEvent: {}
+[7.896930] (-) TimerEvent: {}
+[7.998389] (-) TimerEvent: {}
+[8.099836] (-) TimerEvent: {}
+[8.201094] (-) TimerEvent: {}
+[8.302727] (-) TimerEvent: {}
+[8.404224] (-) TimerEvent: {}
+[8.505108] (-) TimerEvent: {}
+[8.606182] (-) TimerEvent: {}
+[8.706918] (-) TimerEvent: {}
+[8.807648] (-) TimerEvent: {}
+[8.908360] (-) TimerEvent: {}
+[9.009065] (-) TimerEvent: {}
+[9.109769] (-) TimerEvent: {}
+[9.210499] (-) TimerEvent: {}
+[9.311184] (-) TimerEvent: {}
+[9.411911] (-) TimerEvent: {}
+[9.512623] (-) TimerEvent: {}
+[9.613332] (-) TimerEvent: {}
+[9.714073] (-) TimerEvent: {}
+[9.814943] (-) TimerEvent: {}
+[9.916353] (-) TimerEvent: {}
+[10.017735] (-) TimerEvent: {}
+[10.118993] (-) TimerEvent: {}
+[10.220161] (-) TimerEvent: {}
+[10.320953] (-) TimerEvent: {}
+[10.422104] (-) TimerEvent: {}
+[10.523185] (-) TimerEvent: {}
+[10.623947] (-) TimerEvent: {}
+[10.724741] (-) TimerEvent: {}
+[10.825708] (-) TimerEvent: {}
+[10.926516] (-) TimerEvent: {}
+[11.027273] (-) TimerEvent: {}
+[11.128059] (-) TimerEvent: {}
+[11.229139] (-) TimerEvent: {}
+[11.329885] (-) TimerEvent: {}
+[11.431250] (-) TimerEvent: {}
+[11.532710] (-) TimerEvent: {}
+[11.634065] (-) TimerEvent: {}
+[11.735586] (-) TimerEvent: {}
+[11.837129] (-) TimerEvent: {}
+[11.938507] (-) TimerEvent: {}
+[12.039310] (-) TimerEvent: {}
+[12.140284] (-) TimerEvent: {}
+[12.241790] (-) TimerEvent: {}
+[12.343101] (-) TimerEvent: {}
+[12.444391] (-) TimerEvent: {}
+[12.545803] (-) TimerEvent: {}
+[12.647182] (-) TimerEvent: {}
+[12.748471] (-) TimerEvent: {}
+[12.850155] (-) TimerEvent: {}
+[12.951892] (-) TimerEvent: {}
+[13.053096] (-) TimerEvent: {}
+[13.154479] (-) TimerEvent: {}
+[13.255813] (-) TimerEvent: {}
+[13.357010] (-) TimerEvent: {}
+[13.458853] (-) TimerEvent: {}
+[13.560169] (-) TimerEvent: {}
+[13.661452] (-) TimerEvent: {}
+[13.762590] (-) TimerEvent: {}
+[13.863759] (-) TimerEvent: {}
+[13.964991] (-) TimerEvent: {}
+[14.066181] (-) TimerEvent: {}
+[14.167490] (-) TimerEvent: {}
+[14.268785] (-) TimerEvent: {}
+[14.370070] (-) TimerEvent: {}
+[14.471277] (-) TimerEvent: {}
+[14.572471] (-) TimerEvent: {}
+[14.673661] (-) TimerEvent: {}
+[14.774810] (-) TimerEvent: {}
+[14.875998] (-) TimerEvent: {}
+[14.977128] (-) TimerEvent: {}
+[15.078259] (-) TimerEvent: {}
+[15.179523] (-) TimerEvent: {}
+[15.280689] (-) TimerEvent: {}
+[15.381854] (-) TimerEvent: {}
+[15.483040] (-) TimerEvent: {}
+[15.584221] (-) TimerEvent: {}
+[15.685378] (-) TimerEvent: {}
+[15.725239] (lidar_detection) StderrLine: {'line': b'\x1b[01m\x1b[K/home/nexusjetson/bounding_boxes/src/lidar_detection/src/pcl_bounding_box/node.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid PointCloudBoundingBox::pointcloud_callback(sensor_msgs::msg::PointCloud2_<std::allocator<void> >::SharedPtr)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[15.726505] (lidar_detection) StderrLine: {'line': b'\x1b[01m\x1b[K/home/nexusjetson/bounding_boxes/src/lidar_detection/src/pcl_bounding_box/node.cpp:120:23:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Krequest for member \xe2\x80\x98\x1b[01m\x1b[Kscore\x1b[m\x1b[K\xe2\x80\x99 in \xe2\x80\x98\x1b[01m\x1b[Kb\x1b[m\x1b[K\xe2\x80\x99, which is of non-class type \xe2\x80\x98\x1b[01m\x1b[Kuint8_t\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kunsigned char\x1b[m\x1b[K\xe2\x80\x99}\n'}
+[15.726756] (lidar_detection) StderrLine: {'line': b'  120 |                     b.\x1b[01;31m\x1b[Kscore\x1b[m\x1b[K = static_cast<double>(cluster->size());\n'}
+[15.726941] (lidar_detection) StderrLine: {'line': b'      |                       \x1b[01;31m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[15.727156] (lidar_detection) StderrLine: {'line': b'\x1b[01m\x1b[K/home/nexusjetson/bounding_boxes/src/lidar_detection/src/pcl_bounding_box/node.cpp:121:36:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kno matching function for call to \xe2\x80\x98\x1b[01m\x1b[Kstd::vector<PointCloudBoundingBox::pointcloud_callback(sensor_msgs::msg::PointCloud2_<std::allocator<void> >::SharedPtr)::Box>::push_back(std::remove_reference<unsigned char&>::type)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[15.727337] (lidar_detection) StderrLine: {'line': b'  121 |                     \x1b[01;31m\x1b[Kboxes.push_back(std::move(b))\x1b[m\x1b[K;\n'}
+[15.727539] (lidar_detection) StderrLine: {'line': b'      |                     \x1b[01;31m\x1b[K~~~~~~~~~~~~~~~^~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[15.727695] (lidar_detection) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/11/vector:67\x1b[m\x1b[K,\n'}
+[15.727852] (lidar_detection) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/11/functional:62\x1b[m\x1b[K,\n'}
+[15.728001] (lidar_detection) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/11/pstl/glue_algorithm_defs.h:13\x1b[m\x1b[K,\n'}
+[15.728151] (lidar_detection) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/11/algorithm:74\x1b[m\x1b[K,\n'}
+[15.728302] (lidar_detection) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:18\x1b[m\x1b[K,\n'}
+[15.728454] (lidar_detection) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25\x1b[m\x1b[K,\n'}
+[15.728606] (lidar_detection) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21\x1b[m\x1b[K,\n'}
+[15.728752] (lidar_detection) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155\x1b[m\x1b[K,\n'}
+[15.728901] (lidar_detection) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/nexusjetson/bounding_boxes/src/lidar_detection/src/pcl_bounding_box/node.cpp:1\x1b[m\x1b[K:\n'}
+[15.729053] (lidar_detection) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/stl_vector.h:1187:7:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Kvoid std::vector<_Tp, _Alloc>::push_back(const value_type&) [with _Tp = PointCloudBoundingBox::pointcloud_callback(sensor_msgs::msg::PointCloud2_<std::allocator<void> >::SharedPtr)::Box; _Alloc = std::allocator<PointCloudBoundingBox::pointcloud_callback(sensor_msgs::msg::PointCloud2_<std::allocator<void> >::SharedPtr)::Box>; std::vector<_Tp, _Alloc>::value_type = PointCloudBoundingBox::pointcloud_callback(sensor_msgs::msg::PointCloud2_<std::allocator<void> >::SharedPtr)::Box]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[15.729241] (lidar_detection) StderrLine: {'line': b' 1187 |       \x1b[01;36m\x1b[Kpush_back\x1b[m\x1b[K(const value_type& __x)\n'}
+[15.729391] (lidar_detection) StderrLine: {'line': b'      |       \x1b[01;36m\x1b[K^~~~~~~~~\x1b[m\x1b[K\n'}
+[15.729533] (lidar_detection) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/stl_vector.h:1187:35:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  no known conversion for argument 1 from \xe2\x80\x98\x1b[01m\x1b[Kstd::remove_reference<unsigned char&>::type\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kunsigned char\x1b[m\x1b[K\xe2\x80\x99} to \xe2\x80\x98\x1b[01m\x1b[Kconst value_type&\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kconst PointCloudBoundingBox::pointcloud_callback(sensor_msgs::msg::PointCloud2_<std::allocator<void> >::SharedPtr)::Box&\x1b[m\x1b[K\xe2\x80\x99}\n'}
+[15.729701] (lidar_detection) StderrLine: {'line': b' 1187 |       push_back(\x1b[01;36m\x1b[Kconst value_type& __x\x1b[m\x1b[K)\n'}
+[15.729851] (lidar_detection) StderrLine: {'line': b'      |                 \x1b[01;36m\x1b[K~~~~~~~~~~~~~~~~~~^~~\x1b[m\x1b[K\n'}
+[15.730052] (lidar_detection) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/stl_vector.h:1203:7:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Kvoid std::vector<_Tp, _Alloc>::push_back(std::vector<_Tp, _Alloc>::value_type&&) [with _Tp = PointCloudBoundingBox::pointcloud_callback(sensor_msgs::msg::PointCloud2_<std::allocator<void> >::SharedPtr)::Box; _Alloc = std::allocator<PointCloudBoundingBox::pointcloud_callback(sensor_msgs::msg::PointCloud2_<std::allocator<void> >::SharedPtr)::Box>; std::vector<_Tp, _Alloc>::value_type = PointCloudBoundingBox::pointcloud_callback(sensor_msgs::msg::PointCloud2_<std::allocator<void> >::SharedPtr)::Box]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[15.730267] (lidar_detection) StderrLine: {'line': b' 1203 |       \x1b[01;36m\x1b[Kpush_back\x1b[m\x1b[K(value_type&& __x)\n'}
+[15.730421] (lidar_detection) StderrLine: {'line': b'      |       \x1b[01;36m\x1b[K^~~~~~~~~\x1b[m\x1b[K\n'}
+[15.730573] (lidar_detection) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/stl_vector.h:1203:30:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  no known conversion for argument 1 from \xe2\x80\x98\x1b[01m\x1b[Kstd::remove_reference<unsigned char&>::type\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kunsigned char\x1b[m\x1b[K\xe2\x80\x99} to \xe2\x80\x98\x1b[01m\x1b[Kstd::vector<PointCloudBoundingBox::pointcloud_callback(sensor_msgs::msg::PointCloud2_<std::allocator<void> >::SharedPtr)::Box>::value_type&&\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[KPointCloudBoundingBox::pointcloud_callback(sensor_msgs::msg::PointCloud2_<std::allocator<void> >::SharedPtr)::Box&&\x1b[m\x1b[K\xe2\x80\x99}\n'}
+[15.730777] (lidar_detection) StderrLine: {'line': b' 1203 |       push_back(\x1b[01;36m\x1b[Kvalue_type&& __x\x1b[m\x1b[K)\n'}
+[15.730929] (lidar_detection) StderrLine: {'line': b'      |                 \x1b[01;36m\x1b[K~~~~~~~~~~~~~^~~\x1b[m\x1b[K\n'}
+[15.785638] (-) TimerEvent: {}
+[15.886758] (-) TimerEvent: {}
+[15.987960] (-) TimerEvent: {}
+[16.089095] (-) TimerEvent: {}
+[16.190243] (-) TimerEvent: {}
+[16.291443] (-) TimerEvent: {}
+[16.392616] (-) TimerEvent: {}
+[16.493748] (-) TimerEvent: {}
+[16.594897] (-) TimerEvent: {}
+[16.696111] (-) TimerEvent: {}
+[16.797284] (-) TimerEvent: {}
+[16.898426] (-) TimerEvent: {}
+[16.999632] (-) TimerEvent: {}
+[17.100797] (-) TimerEvent: {}
+[17.202030] (-) TimerEvent: {}
+[17.303317] (-) TimerEvent: {}
+[17.404596] (-) TimerEvent: {}
+[17.505842] (-) TimerEvent: {}
+[17.607159] (-) TimerEvent: {}
+[17.708445] (-) TimerEvent: {}
+[17.809629] (-) TimerEvent: {}
+[17.910869] (-) TimerEvent: {}
+[18.012075] (-) TimerEvent: {}
+[18.113244] (-) TimerEvent: {}
+[18.214470] (-) TimerEvent: {}
+[18.315933] (-) TimerEvent: {}
+[18.417230] (-) TimerEvent: {}
+[18.518518] (-) TimerEvent: {}
+[18.619858] (-) TimerEvent: {}
+[18.721130] (-) TimerEvent: {}
+[18.822388] (-) TimerEvent: {}
+[18.923745] (-) TimerEvent: {}
+[19.024901] (-) TimerEvent: {}
+[19.126168] (-) TimerEvent: {}
+[19.227446] (-) TimerEvent: {}
+[19.328681] (-) TimerEvent: {}
+[19.429880] (-) TimerEvent: {}
+[19.531083] (-) TimerEvent: {}
+[19.632359] (-) TimerEvent: {}
+[19.733622] (-) TimerEvent: {}
+[19.834896] (-) TimerEvent: {}
+[19.936223] (-) TimerEvent: {}
+[20.037490] (-) TimerEvent: {}
+[20.138765] (-) TimerEvent: {}
+[20.240043] (-) TimerEvent: {}
+[20.341333] (-) TimerEvent: {}
+[20.442636] (-) TimerEvent: {}
+[20.544009] (-) TimerEvent: {}
+[20.645278] (-) TimerEvent: {}
+[20.746614] (-) TimerEvent: {}
+[20.848371] (-) TimerEvent: {}
+[20.949707] (-) TimerEvent: {}
+[21.050970] (-) TimerEvent: {}
+[21.152291] (-) TimerEvent: {}
+[21.253629] (-) TimerEvent: {}
+[21.354920] (-) TimerEvent: {}
+[21.456224] (-) TimerEvent: {}
+[21.557476] (-) TimerEvent: {}
+[21.658650] (-) TimerEvent: {}
+[21.759966] (-) TimerEvent: {}
+[21.861226] (-) TimerEvent: {}
+[21.962716] (-) TimerEvent: {}
+[22.064680] (-) TimerEvent: {}
+[22.166207] (-) TimerEvent: {}
+[22.267566] (-) TimerEvent: {}
+[22.368932] (-) TimerEvent: {}
+[22.470383] (-) TimerEvent: {}
+[22.571749] (-) TimerEvent: {}
+[22.673043] (-) TimerEvent: {}
+[22.774262] (-) TimerEvent: {}
+[22.875529] (-) TimerEvent: {}
+[22.976752] (-) TimerEvent: {}
+[23.078018] (-) TimerEvent: {}
+[23.179237] (-) TimerEvent: {}
+[23.280477] (-) TimerEvent: {}
+[23.381909] (-) TimerEvent: {}
+[23.483243] (-) TimerEvent: {}
+[23.584537] (-) TimerEvent: {}
+[23.685838] (-) TimerEvent: {}
+[23.787208] (-) TimerEvent: {}
+[23.888498] (-) TimerEvent: {}
+[23.989810] (-) TimerEvent: {}
+[24.091160] (-) TimerEvent: {}
+[24.192492] (-) TimerEvent: {}
+[24.293805] (-) TimerEvent: {}
+[24.395152] (-) TimerEvent: {}
+[24.496494] (-) TimerEvent: {}
+[24.597704] (-) TimerEvent: {}
+[24.698616] (-) TimerEvent: {}
+[24.800416] (-) TimerEvent: {}
+[24.901812] (-) TimerEvent: {}
+[25.003197] (-) TimerEvent: {}
+[25.104490] (-) TimerEvent: {}
+[25.205760] (-) TimerEvent: {}
+[25.307065] (-) TimerEvent: {}
+[25.408328] (-) TimerEvent: {}
+[25.509610] (-) TimerEvent: {}
+[25.610881] (-) TimerEvent: {}
+[25.712482] (-) TimerEvent: {}
+[25.814211] (-) TimerEvent: {}
+[25.915480] (-) TimerEvent: {}
+[26.016744] (-) TimerEvent: {}
+[26.118012] (-) TimerEvent: {}
+[26.219243] (-) TimerEvent: {}
+[26.320494] (-) TimerEvent: {}
+[26.421756] (-) TimerEvent: {}
+[26.523107] (-) TimerEvent: {}
+[26.624673] (-) TimerEvent: {}
+[26.725985] (-) TimerEvent: {}
+[26.827525] (-) TimerEvent: {}
+[26.928376] (-) TimerEvent: {}
+[26.958615] (lidar_detection) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/bounding_box_node.dir/build.make:76: CMakeFiles/bounding_box_node.dir/src/pcl_bounding_box/node.cpp.o] Error 1\n'}
+[26.960675] (lidar_detection) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:249: CMakeFiles/bounding_box_node.dir/all] Error 2\n'}
+[26.961304] (lidar_detection) StderrLine: {'line': b'gmake: *** [Makefile:146: all] Error 2\n'}
+[26.971609] (lidar_detection) CommandEnded: {'returncode': 2}
+[27.023997] (lidar_detection) JobEnded: {'identifier': 'lidar_detection', 'rc': 2}
+[27.028450] (-) TimerEvent: {}
+[27.035431] (-) EventReactorShutdown: {}

@@ -1,0 +1,39 @@
+[0.033s] Invoking command in '/home/nexusjetson/bounding_boxes/build/lidar_detection': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/nexusjetson/bounding_boxes/build/lidar_detection -- -j6 -l6
+[0.223s] [35m[1mConsolidate compiler generated dependencies of target bounding_box_node[0m
+[0.229s] [ 10%] Built target test_node
+[0.268s] [ 40%] Built target preprocessor_node
+[0.268s] [ 45%] Built target ground_removal_node
+[0.287s] [ 70%] Built target cluster_extraction_node
+[0.338s] [ 75%] [32mBuilding CXX object CMakeFiles/bounding_box_node.dir/src/pcl_bounding_box/node.cpp.o[0m
+[15.724s] [01m[K/home/nexusjetson/bounding_boxes/src/lidar_detection/src/pcl_bounding_box/node.cpp:[m[K In member function ‘[01m[Kvoid PointCloudBoundingBox::pointcloud_callback(sensor_msgs::msg::PointCloud2_<std::allocator<void> >::SharedPtr)[m[K’:
+[15.725s] [01m[K/home/nexusjetson/bounding_boxes/src/lidar_detection/src/pcl_bounding_box/node.cpp:120:23:[m[K [01;31m[Kerror: [m[Krequest for member ‘[01m[Kscore[m[K’ in ‘[01m[Kb[m[K’, which is of non-class type ‘[01m[Kuint8_t[m[K’ {aka ‘[01m[Kunsigned char[m[K’}
+[15.725s]   120 |                     b.[01;31m[Kscore[m[K = static_cast<double>(cluster->size());
+[15.725s]       |                       [01;31m[K^~~~~[m[K
+[15.725s] [01m[K/home/nexusjetson/bounding_boxes/src/lidar_detection/src/pcl_bounding_box/node.cpp:121:36:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Kstd::vector<PointCloudBoundingBox::pointcloud_callback(sensor_msgs::msg::PointCloud2_<std::allocator<void> >::SharedPtr)::Box>::push_back(std::remove_reference<unsigned char&>::type)[m[K’
+[15.725s]   121 |                     [01;31m[Kboxes.push_back(std::move(b))[m[K;
+[15.726s]       |                     [01;31m[K~~~~~~~~~~~~~~~^~~~~~~~~~~~~~[m[K
+[15.726s] In file included from [01m[K/usr/include/c++/11/vector:67[m[K,
+[15.726s]                  from [01m[K/usr/include/c++/11/functional:62[m[K,
+[15.726s]                  from [01m[K/usr/include/c++/11/pstl/glue_algorithm_defs.h:13[m[K,
+[15.726s]                  from [01m[K/usr/include/c++/11/algorithm:74[m[K,
+[15.726s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:18[m[K,
+[15.726s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[15.727s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[15.727s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[15.727s]                  from [01m[K/home/nexusjetson/bounding_boxes/src/lidar_detection/src/pcl_bounding_box/node.cpp:1[m[K:
+[15.727s] [01m[K/usr/include/c++/11/bits/stl_vector.h:1187:7:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kvoid std::vector<_Tp, _Alloc>::push_back(const value_type&) [with _Tp = PointCloudBoundingBox::pointcloud_callback(sensor_msgs::msg::PointCloud2_<std::allocator<void> >::SharedPtr)::Box; _Alloc = std::allocator<PointCloudBoundingBox::pointcloud_callback(sensor_msgs::msg::PointCloud2_<std::allocator<void> >::SharedPtr)::Box>; std::vector<_Tp, _Alloc>::value_type = PointCloudBoundingBox::pointcloud_callback(sensor_msgs::msg::PointCloud2_<std::allocator<void> >::SharedPtr)::Box][m[K’
+[15.727s]  1187 |       [01;36m[Kpush_back[m[K(const value_type& __x)
+[15.727s]       |       [01;36m[K^~~~~~~~~[m[K
+[15.728s] [01m[K/usr/include/c++/11/bits/stl_vector.h:1187:35:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kstd::remove_reference<unsigned char&>::type[m[K’ {aka ‘[01m[Kunsigned char[m[K’} to ‘[01m[Kconst value_type&[m[K’ {aka ‘[01m[Kconst PointCloudBoundingBox::pointcloud_callback(sensor_msgs::msg::PointCloud2_<std::allocator<void> >::SharedPtr)::Box&[m[K’}
+[15.728s]  1187 |       push_back([01;36m[Kconst value_type& __x[m[K)
+[15.728s]       |                 [01;36m[K~~~~~~~~~~~~~~~~~~^~~[m[K
+[15.728s] [01m[K/usr/include/c++/11/bits/stl_vector.h:1203:7:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kvoid std::vector<_Tp, _Alloc>::push_back(std::vector<_Tp, _Alloc>::value_type&&) [with _Tp = PointCloudBoundingBox::pointcloud_callback(sensor_msgs::msg::PointCloud2_<std::allocator<void> >::SharedPtr)::Box; _Alloc = std::allocator<PointCloudBoundingBox::pointcloud_callback(sensor_msgs::msg::PointCloud2_<std::allocator<void> >::SharedPtr)::Box>; std::vector<_Tp, _Alloc>::value_type = PointCloudBoundingBox::pointcloud_callback(sensor_msgs::msg::PointCloud2_<std::allocator<void> >::SharedPtr)::Box][m[K’
+[15.728s]  1203 |       [01;36m[Kpush_back[m[K(value_type&& __x)
+[15.728s]       |       [01;36m[K^~~~~~~~~[m[K
+[15.729s] [01m[K/usr/include/c++/11/bits/stl_vector.h:1203:30:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kstd::remove_reference<unsigned char&>::type[m[K’ {aka ‘[01m[Kunsigned char[m[K’} to ‘[01m[Kstd::vector<PointCloudBoundingBox::pointcloud_callback(sensor_msgs::msg::PointCloud2_<std::allocator<void> >::SharedPtr)::Box>::value_type&&[m[K’ {aka ‘[01m[KPointCloudBoundingBox::pointcloud_callback(sensor_msgs::msg::PointCloud2_<std::allocator<void> >::SharedPtr)::Box&&[m[K’}
+[15.729s]  1203 |       push_back([01;36m[Kvalue_type&& __x[m[K)
+[15.729s]       |                 [01;36m[K~~~~~~~~~~~~~^~~[m[K
+[26.958s] gmake[2]: *** [CMakeFiles/bounding_box_node.dir/build.make:76: CMakeFiles/bounding_box_node.dir/src/pcl_bounding_box/node.cpp.o] Error 1
+[26.959s] gmake[1]: *** [CMakeFiles/Makefile2:249: CMakeFiles/bounding_box_node.dir/all] Error 2
+[26.959s] gmake: *** [Makefile:146: all] Error 2
+[26.970s] Invoked command in '/home/nexusjetson/bounding_boxes/build/lidar_detection' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/nexusjetson/bounding_boxes/build/lidar_detection -- -j6 -l6

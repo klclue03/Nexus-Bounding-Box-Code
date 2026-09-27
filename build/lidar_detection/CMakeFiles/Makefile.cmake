@@ -116,6 +116,13 @@ set(CMAKE_MAKEFILE_DEPENDS
   "/opt/ros/humble/share/ament_cmake_gen_version_h/cmake/ament_cmake_gen_version_hConfig-version.cmake"
   "/opt/ros/humble/share/ament_cmake_gen_version_h/cmake/ament_cmake_gen_version_hConfig.cmake"
   "/opt/ros/humble/share/ament_cmake_gen_version_h/cmake/ament_generate_version_header.cmake"
+  "/opt/ros/humble/share/ament_cmake_gtest/cmake/ament_add_gtest.cmake"
+  "/opt/ros/humble/share/ament_cmake_gtest/cmake/ament_add_gtest_executable.cmake"
+  "/opt/ros/humble/share/ament_cmake_gtest/cmake/ament_add_gtest_test.cmake"
+  "/opt/ros/humble/share/ament_cmake_gtest/cmake/ament_cmake_gtest-extras.cmake"
+  "/opt/ros/humble/share/ament_cmake_gtest/cmake/ament_cmake_gtestConfig-version.cmake"
+  "/opt/ros/humble/share/ament_cmake_gtest/cmake/ament_cmake_gtestConfig.cmake"
+  "/opt/ros/humble/share/ament_cmake_gtest/cmake/ament_find_gtest.cmake"
   "/opt/ros/humble/share/ament_cmake_include_directories/cmake/ament_cmake_include_directories-extras.cmake"
   "/opt/ros/humble/share/ament_cmake_include_directories/cmake/ament_cmake_include_directoriesConfig-version.cmake"
   "/opt/ros/humble/share/ament_cmake_include_directories/cmake/ament_cmake_include_directoriesConfig.cmake"
@@ -240,6 +247,7 @@ set(CMAKE_MAKEFILE_DEPENDS
   "/opt/ros/humble/share/geometry_msgs/cmake/rosidl_cmake-extras.cmake"
   "/opt/ros/humble/share/geometry_msgs/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake"
   "/opt/ros/humble/share/geometry_msgs/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake"
+  "/opt/ros/humble/share/gtest_vendor/cmake/gtest_vendorConfig.cmake"
   "/opt/ros/humble/share/libstatistics_collector/cmake/ament_cmake_export_dependencies-extras.cmake"
   "/opt/ros/humble/share/libstatistics_collector/cmake/ament_cmake_export_include_directories-extras.cmake"
   "/opt/ros/humble/share/libstatistics_collector/cmake/ament_cmake_export_libraries-extras.cmake"
@@ -688,6 +696,7 @@ set(CMAKE_MAKEFILE_DEPENDS
   "/opt/ros/humble/share/visualization_msgs/cmake/visualization_msgs__rosidl_typesupport_introspection_cExport.cmake"
   "/opt/ros/humble/share/visualization_msgs/cmake/visualization_msgs__rosidl_typesupport_introspection_cppExport-none.cmake"
   "/opt/ros/humble/share/visualization_msgs/cmake/visualization_msgs__rosidl_typesupport_introspection_cppExport.cmake"
+  "/opt/ros/humble/src/gtest_vendor/CMakeLists.txt"
   "/usr/lib/aarch64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake"
   "/usr/lib/aarch64-linux-gnu/cmake/Boost-1.74.0/BoostConfigVersion.cmake"
   "/usr/lib/aarch64-linux-gnu/cmake/BoostDetectToolset-1.74.0.cmake"
@@ -888,6 +897,7 @@ set(CMAKE_MAKEFILE_PRODUCTS
   "ament_cmake_index/share/ament_index/resource_index/parent_prefix_path/lidar_detection"
   "ament_cmake_index/share/ament_index/resource_index/packages/lidar_detection"
   "CMakeFiles/CMakeDirectoryInformation.cmake"
+  "gtest/CMakeFiles/CMakeDirectoryInformation.cmake"
   )
 
 # Dependency information for all targets:
@@ -899,4 +909,7 @@ set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/ground_removal_node.dir/DependInfo.cmake"
   "CMakeFiles/cluster_extraction_node.dir/DependInfo.cmake"
   "CMakeFiles/bounding_box_node.dir/DependInfo.cmake"
+  "CMakeFiles/bounding_box_iou_test.dir/DependInfo.cmake"
+  "gtest/CMakeFiles/gtest.dir/DependInfo.cmake"
+  "gtest/CMakeFiles/gtest_main.dir/DependInfo.cmake"
   )

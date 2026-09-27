@@ -1,6 +1,8 @@
 #ifndef BOUNDING_BOX_HPP
 #define BOUNDING_BOX_HPP
 
+#include <vector>
+
 #include <pcl/point_types.h>
 #include <pcl/common/common.h>
 #include <visualization_msgs/msg/marker.hpp>
@@ -9,6 +11,12 @@ class BoundingBox
 {
 public:
     BoundingBox() = default;
+
+    static double computeBoxIoU(
+        const Eigen::Vector4f &min_a,
+        const Eigen::Vector4f &max_a,
+        const Eigen::Vector4f &min_b,
+        const Eigen::Vector4f &max_b);
 
     // Function to compute a bounding box marker for a given cluster
     visualization_msgs::msg::Marker createBoundingBoxMarker(

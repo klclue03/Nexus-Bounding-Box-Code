@@ -262,6 +262,45 @@ bounding_box_node/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/bounding_box_node.dir/build.make CMakeFiles/bounding_box_node.dir/build
 .PHONY : bounding_box_node/fast
 
+#=============================================================================
+# Target rules for targets named bounding_box_iou_test
+
+# Build rule for target.
+bounding_box_iou_test: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 bounding_box_iou_test
+.PHONY : bounding_box_iou_test
+
+# fast build rule for target.
+bounding_box_iou_test/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/bounding_box_iou_test.dir/build.make CMakeFiles/bounding_box_iou_test.dir/build
+.PHONY : bounding_box_iou_test/fast
+
+#=============================================================================
+# Target rules for targets named gtest
+
+# Build rule for target.
+gtest: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 gtest
+.PHONY : gtest
+
+# fast build rule for target.
+gtest/fast:
+	$(MAKE) $(MAKESILENT) -f gtest/CMakeFiles/gtest.dir/build.make gtest/CMakeFiles/gtest.dir/build
+.PHONY : gtest/fast
+
+#=============================================================================
+# Target rules for targets named gtest_main
+
+# Build rule for target.
+gtest_main: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 gtest_main
+.PHONY : gtest_main
+
+# fast build rule for target.
+gtest_main/fast:
+	$(MAKE) $(MAKESILENT) -f gtest/CMakeFiles/gtest_main.dir/build.make gtest/CMakeFiles/gtest_main.dir/build
+.PHONY : gtest_main/fast
+
 src/node_template/node.o: src/node_template/node.cpp.o
 .PHONY : src/node_template/node.o
 
@@ -292,6 +331,7 @@ src/pcl_bounding_box/bounding_box.o: src/pcl_bounding_box/bounding_box.cpp.o
 # target to build an object file
 src/pcl_bounding_box/bounding_box.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/bounding_box_node.dir/build.make CMakeFiles/bounding_box_node.dir/src/pcl_bounding_box/bounding_box.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/bounding_box_iou_test.dir/build.make CMakeFiles/bounding_box_iou_test.dir/src/pcl_bounding_box/bounding_box.cpp.o
 .PHONY : src/pcl_bounding_box/bounding_box.cpp.o
 
 src/pcl_bounding_box/bounding_box.i: src/pcl_bounding_box/bounding_box.cpp.i
@@ -300,6 +340,7 @@ src/pcl_bounding_box/bounding_box.i: src/pcl_bounding_box/bounding_box.cpp.i
 # target to preprocess a source file
 src/pcl_bounding_box/bounding_box.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/bounding_box_node.dir/build.make CMakeFiles/bounding_box_node.dir/src/pcl_bounding_box/bounding_box.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/bounding_box_iou_test.dir/build.make CMakeFiles/bounding_box_iou_test.dir/src/pcl_bounding_box/bounding_box.cpp.i
 .PHONY : src/pcl_bounding_box/bounding_box.cpp.i
 
 src/pcl_bounding_box/bounding_box.s: src/pcl_bounding_box/bounding_box.cpp.s
@@ -308,6 +349,7 @@ src/pcl_bounding_box/bounding_box.s: src/pcl_bounding_box/bounding_box.cpp.s
 # target to generate assembly for a file
 src/pcl_bounding_box/bounding_box.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/bounding_box_node.dir/build.make CMakeFiles/bounding_box_node.dir/src/pcl_bounding_box/bounding_box.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/bounding_box_iou_test.dir/build.make CMakeFiles/bounding_box_iou_test.dir/src/pcl_bounding_box/bounding_box.cpp.s
 .PHONY : src/pcl_bounding_box/bounding_box.cpp.s
 
 src/pcl_bounding_box/node.o: src/pcl_bounding_box/node.cpp.o
@@ -496,6 +538,30 @@ src/pcl_preprocessor/node.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/preprocessor_node.dir/build.make CMakeFiles/preprocessor_node.dir/src/pcl_preprocessor/node.cpp.s
 .PHONY : src/pcl_preprocessor/node.cpp.s
 
+test/bounding_box_iou_test.o: test/bounding_box_iou_test.cpp.o
+.PHONY : test/bounding_box_iou_test.o
+
+# target to build an object file
+test/bounding_box_iou_test.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/bounding_box_iou_test.dir/build.make CMakeFiles/bounding_box_iou_test.dir/test/bounding_box_iou_test.cpp.o
+.PHONY : test/bounding_box_iou_test.cpp.o
+
+test/bounding_box_iou_test.i: test/bounding_box_iou_test.cpp.i
+.PHONY : test/bounding_box_iou_test.i
+
+# target to preprocess a source file
+test/bounding_box_iou_test.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/bounding_box_iou_test.dir/build.make CMakeFiles/bounding_box_iou_test.dir/test/bounding_box_iou_test.cpp.i
+.PHONY : test/bounding_box_iou_test.cpp.i
+
+test/bounding_box_iou_test.s: test/bounding_box_iou_test.cpp.s
+.PHONY : test/bounding_box_iou_test.s
+
+# target to generate assembly for a file
+test/bounding_box_iou_test.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/bounding_box_iou_test.dir/build.make CMakeFiles/bounding_box_iou_test.dir/test/bounding_box_iou_test.cpp.s
+.PHONY : test/bounding_box_iou_test.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -511,9 +577,12 @@ help:
 	@echo "... test"
 	@echo "... lidar_detection_uninstall"
 	@echo "... uninstall"
+	@echo "... bounding_box_iou_test"
 	@echo "... bounding_box_node"
 	@echo "... cluster_extraction_node"
 	@echo "... ground_removal_node"
+	@echo "... gtest"
+	@echo "... gtest_main"
 	@echo "... preprocessor_node"
 	@echo "... test_node"
 	@echo "... src/node_template/node.o"
@@ -543,6 +612,9 @@ help:
 	@echo "... src/pcl_preprocessor/node.o"
 	@echo "... src/pcl_preprocessor/node.i"
 	@echo "... src/pcl_preprocessor/node.s"
+	@echo "... test/bounding_box_iou_test.o"
+	@echo "... test/bounding_box_iou_test.i"
+	@echo "... test/bounding_box_iou_test.s"
 .PHONY : help
 
 

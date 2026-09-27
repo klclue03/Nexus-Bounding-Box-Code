@@ -5,6 +5,7 @@
 /home/nexusjetson/bounding_boxes/build/lidar_detection/CMakeFiles/ground_removal_node.dir
 /home/nexusjetson/bounding_boxes/build/lidar_detection/CMakeFiles/cluster_extraction_node.dir
 /home/nexusjetson/bounding_boxes/build/lidar_detection/CMakeFiles/bounding_box_node.dir
+/home/nexusjetson/bounding_boxes/build/lidar_detection/CMakeFiles/bounding_box_iou_test.dir
 /home/nexusjetson/bounding_boxes/build/lidar_detection/CMakeFiles/test.dir
 /home/nexusjetson/bounding_boxes/build/lidar_detection/CMakeFiles/edit_cache.dir
 /home/nexusjetson/bounding_boxes/build/lidar_detection/CMakeFiles/rebuild_cache.dir
@@ -12,3 +13,12 @@
 /home/nexusjetson/bounding_boxes/build/lidar_detection/CMakeFiles/install.dir
 /home/nexusjetson/bounding_boxes/build/lidar_detection/CMakeFiles/install/local.dir
 /home/nexusjetson/bounding_boxes/build/lidar_detection/CMakeFiles/install/strip.dir
+/home/nexusjetson/bounding_boxes/build/lidar_detection/gtest/CMakeFiles/gtest.dir
+/home/nexusjetson/bounding_boxes/build/lidar_detection/gtest/CMakeFiles/gtest_main.dir
+/home/nexusjetson/bounding_boxes/build/lidar_detection/gtest/CMakeFiles/test.dir
+/home/nexusjetson/bounding_boxes/build/lidar_detection/gtest/CMakeFiles/edit_cache.dir
+/home/nexusjetson/bounding_boxes/build/lidar_detection/gtest/CMakeFiles/rebuild_cache.dir
+/home/nexusjetson/bounding_boxes/build/lidar_detection/gtest/CMakeFiles/list_install_components.dir
+/home/nexusjetson/bounding_boxes/build/lidar_detection/gtest/CMakeFiles/install.dir
+/home/nexusjetson/bounding_boxes/build/lidar_detection/gtest/CMakeFiles/install/local.dir
+/home/nexusjetson/bounding_boxes/build/lidar_detection/gtest/CMakeFiles/install/strip.dir

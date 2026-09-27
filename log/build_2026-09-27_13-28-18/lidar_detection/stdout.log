@@ -1,0 +1,80 @@
+-- Found ament_cmake: 1.3.14 (/opt/ros/humble/share/ament_cmake/cmake)
+-- Found rclcpp: 16.0.19 (/opt/ros/humble/share/rclcpp/cmake)
+-- Found rosidl_generator_c: 3.1.8 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+-- Found rosidl_adapter: 3.1.8 (/opt/ros/humble/share/rosidl_adapter/cmake)
+-- Found rosidl_generator_cpp: 3.1.8 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+-- Found rmw_fastrtps_cpp: 6.2.10 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+-- Using RMW implementation 'rmw_fastrtps_cpp' as default
+-- Found sensor_msgs: 4.9.1 (/opt/ros/humble/share/sensor_msgs/cmake)
+-- Found pcl_conversions: 2.4.5 (/opt/ros/humble/share/pcl_conversions/cmake)
+-- Eigen found (include: /usr/include/eigen3, version: 3.4.0)
+-- FLANN found (include: /usr/include, lib: /usr/lib/aarch64-linux-gnu/libflann_cpp.so)
+-- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)
+-- OpenNI2 found (version: 2.2.0.33, include: /usr/include/openni2, lib: /usr/lib/aarch64-linux-gnu/libOpenNI2.so;libusb::libusb)
+-- Eigen found (include: /usr/include/eigen3, version: 3.4.0)
+-- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)
+-- OpenNI2 found (version: 2.2.0.33, include: /usr/include/openni2, lib: /usr/lib/aarch64-linux-gnu/libOpenNI2.so;libusb::libusb)
+-- Found Qhull version 8.0.2
+-- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)
+-- Found visualization_msgs: 4.9.1 (/opt/ros/humble/share/visualization_msgs/cmake)
+-- Found ament_cmake_gtest: 1.3.14 (/opt/ros/humble/share/ament_cmake_gtest/cmake)
+-- Found ament_lint_auto: 0.12.15 (/opt/ros/humble/share/ament_lint_auto/cmake)
+-- Found gtest sources under '/opt/ros/humble/src/gtest_vendor': C++ tests using 'Google Test' will be built
+-- Added test 'cppcheck' to perform static code analysis on C / C++ code
+-- Configured cppcheck include dirs: /home/nexusjetson/bounding_boxes/src/lidar_detection/src/pcl_preprocessor;/home/nexusjetson/bounding_boxes/src/lidar_detection/src/pcl_ground_removal;/home/nexusjetson/bounding_boxes/src/lidar_detection/src/pcl_cluster_extraction;/home/nexusjetson/bounding_boxes/src/lidar_detection/src/pcl_bounding_box
+-- Configured cppcheck exclude dirs and/or files: 
+-- Added test 'lint_cmake' to check CMake code style
+-- Added test 'uncrustify' to check C / C++ code style
+-- Configured uncrustify additional arguments: 
+-- Added test 'xmllint' to check XML markup files
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/nexusjetson/bounding_boxes/build/lidar_detection
+[35m[1mConsolidate compiler generated dependencies of target test_node[0m
+[35m[1mConsolidate compiler generated dependencies of target preprocessor_node[0m
+[35m[1mConsolidate compiler generated dependencies of target cluster_extraction_node[0m
+[35m[1mConsolidate compiler generated dependencies of target bounding_box_node[0m
+[35m[1mConsolidate compiler generated dependencies of target ground_removal_node[0m
+[  3%] [32mBuilding CXX object gtest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.o[0m
+[ 11%] Built target test_node
+[ 22%] Built target preprocessor_node
+[ 40%] Built target cluster_extraction_node
+[ 44%] [32mBuilding CXX object CMakeFiles/bounding_box_node.dir/src/pcl_bounding_box/bounding_box.cpp.o[0m
+[ 48%] [32mBuilding CXX object CMakeFiles/bounding_box_node.dir/src/pcl_bounding_box/node.cpp.o[0m
+[ 51%] [32mBuilding CXX object gtest/CMakeFiles/gtest.dir/src/gtest-all.cc.o[0m
+[ 66%] Built target ground_removal_node
+[ 70%] [32m[1mLinking CXX static library libgtest_main.a[0m
+[ 70%] Built target gtest_main
+[ 74%] [32m[1mLinking CXX static library libgtest.a[0m
+[ 74%] Built target gtest
+[ 77%] [32mBuilding CXX object CMakeFiles/bounding_box_iou_test.dir/src/pcl_bounding_box/bounding_box.cpp.o[0m
+[ 81%] [32mBuilding CXX object CMakeFiles/bounding_box_iou_test.dir/test/bounding_box_iou_test.cpp.o[0m
+[ 85%] [32m[1mLinking CXX executable bounding_box_iou_test[0m
+[ 85%] Built target bounding_box_iou_test
+[ 88%] [32m[1mLinking CXX executable bounding_box_node[0m
+[100%] Built target bounding_box_node
+-- Install configuration: ""
+-- Up-to-date: /home/nexusjetson/bounding_boxes/install/lidar_detection/lib/lidar_detection/test_node
+-- Up-to-date: /home/nexusjetson/bounding_boxes/install/lidar_detection/lib/lidar_detection/preprocessor_node
+-- Up-to-date: /home/nexusjetson/bounding_boxes/install/lidar_detection/lib/lidar_detection/ground_removal_node
+-- Up-to-date: /home/nexusjetson/bounding_boxes/install/lidar_detection/lib/lidar_detection/cluster_extraction_node
+-- Installing: /home/nexusjetson/bounding_boxes/install/lidar_detection/lib/lidar_detection/bounding_box_node
+-- Set runtime path of "/home/nexusjetson/bounding_boxes/install/lidar_detection/lib/lidar_detection/bounding_box_node" to ""
+-- Up-to-date: /home/nexusjetson/bounding_boxes/install/lidar_detection/share/ament_index/resource_index/package_run_dependencies/lidar_detection
+-- Up-to-date: /home/nexusjetson/bounding_boxes/install/lidar_detection/share/ament_index/resource_index/parent_prefix_path/lidar_detection
+-- Up-to-date: /home/nexusjetson/bounding_boxes/install/lidar_detection/share/lidar_detection/environment/ament_prefix_path.sh
+-- Installing: /home/nexusjetson/bounding_boxes/install/lidar_detection/share/lidar_detection/environment/ament_prefix_path.dsv
+-- Up-to-date: /home/nexusjetson/bounding_boxes/install/lidar_detection/share/lidar_detection/environment/path.sh
+-- Installing: /home/nexusjetson/bounding_boxes/install/lidar_detection/share/lidar_detection/environment/path.dsv
+-- Up-to-date: /home/nexusjetson/bounding_boxes/install/lidar_detection/share/lidar_detection/local_setup.bash
+-- Up-to-date: /home/nexusjetson/bounding_boxes/install/lidar_detection/share/lidar_detection/local_setup.sh
+-- Up-to-date: /home/nexusjetson/bounding_boxes/install/lidar_detection/share/lidar_detection/local_setup.zsh
+-- Installing: /home/nexusjetson/bounding_boxes/install/lidar_detection/share/lidar_detection/local_setup.dsv
+-- Installing: /home/nexusjetson/bounding_boxes/install/lidar_detection/share/lidar_detection/package.dsv
+-- Up-to-date: /home/nexusjetson/bounding_boxes/install/lidar_detection/share/ament_index/resource_index/packages/lidar_detection
+-- Up-to-date: /home/nexusjetson/bounding_boxes/install/lidar_detection/share/lidar_detection/cmake/lidar_detectionConfig.cmake
+-- Up-to-date: /home/nexusjetson/bounding_boxes/install/lidar_detection/share/lidar_detection/cmake/lidar_detectionConfig-version.cmake
+-- Installing: /home/nexusjetson/bounding_boxes/install/lidar_detection/share/lidar_detection/package.xml

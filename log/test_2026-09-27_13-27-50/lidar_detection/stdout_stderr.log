@@ -1,0 +1,16 @@
+UpdateCTestConfiguration  from :/home/nexusjetson/bounding_boxes/build/lidar_detection/CTestConfiguration.ini
+Parse Config file:/home/nexusjetson/bounding_boxes/build/lidar_detection/CTestConfiguration.ini
+   Site: nexusjetson-desktop
+   Build name: (empty)
+ Add coverage exclude regular expressions.
+Create new tag: 20260927-1727 - Experimental
+UpdateCTestConfiguration  from :/home/nexusjetson/bounding_boxes/build/lidar_detection/CTestConfiguration.ini
+Parse Config file:/home/nexusjetson/bounding_boxes/build/lidar_detection/CTestConfiguration.ini
+Test project /home/nexusjetson/bounding_boxes/build/lidar_detection
+Constructing a list of tests
+Done constructing a list of tests
+Updating test list for fixtures
+Added 0 tests to meet fixture requirements
+Checking test dependency graph...
+Checking test dependency graph end
+No tests were found!!!

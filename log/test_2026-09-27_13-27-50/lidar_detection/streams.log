@@ -1,0 +1,18 @@
+[0.156s] Invoking command in '/home/nexusjetson/bounding_boxes/build/lidar_detection': AMENT_PREFIX_PATH=/home/nexusjetson/bounding_boxes/install/lidar_detection:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/nexusjetson/bounding_boxes/install/lidar_detection /usr/bin/ctest -C Release -D ExperimentalTest --no-compress-output -V --force-new-ctest-process -R bounding_box_iou_test
+[0.180s] UpdateCTestConfiguration  from :/home/nexusjetson/bounding_boxes/build/lidar_detection/CTestConfiguration.ini
+[0.180s] Parse Config file:/home/nexusjetson/bounding_boxes/build/lidar_detection/CTestConfiguration.ini
+[0.180s]    Site: nexusjetson-desktop
+[0.181s]    Build name: (empty)
+[0.181s]  Add coverage exclude regular expressions.
+[0.184s] Create new tag: 20260927-1727 - Experimental
+[0.184s] UpdateCTestConfiguration  from :/home/nexusjetson/bounding_boxes/build/lidar_detection/CTestConfiguration.ini
+[0.186s] Parse Config file:/home/nexusjetson/bounding_boxes/build/lidar_detection/CTestConfiguration.ini
+[0.186s] Test project /home/nexusjetson/bounding_boxes/build/lidar_detection
+[0.186s] Constructing a list of tests
+[0.186s] Done constructing a list of tests
+[0.187s] Updating test list for fixtures
+[0.187s] Added 0 tests to meet fixture requirements
+[0.187s] Checking test dependency graph...
+[0.187s] Checking test dependency graph end
+[0.187s] No tests were found!!!
+[0.194s] Invoked command in '/home/nexusjetson/bounding_boxes/build/lidar_detection' returned '0': AMENT_PREFIX_PATH=/home/nexusjetson/bounding_boxes/install/lidar_detection:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/nexusjetson/bounding_boxes/install/lidar_detection /usr/bin/ctest -C Release -D ExperimentalTest --no-compress-output -V --force-new-ctest-process -R bounding_box_iou_test

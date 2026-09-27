@@ -1,0 +1,39 @@
+Start testing: Sep 27 13:29 EDT
+----------------------------------------------------------
+1/5 Testing: bounding_box_iou_test
+1/5 Test: bounding_box_iou_test
+Command: "/usr/bin/python3" "-u" "/opt/ros/humble/share/ament_cmake_test/cmake/run_test.py" "/home/nexusjetson/bounding_boxes/build/lidar_detection/test_results/lidar_detection/bounding_box_iou_test.gtest.xml" "--package-name" "lidar_detection" "--output-file" "/home/nexusjetson/bounding_boxes/build/lidar_detection/ament_cmake_gtest/bounding_box_iou_test.txt" "--command" "/home/nexusjetson/bounding_boxes/build/lidar_detection/bounding_box_iou_test" "--gtest_output=xml:/home/nexusjetson/bounding_boxes/build/lidar_detection/test_results/lidar_detection/bounding_box_iou_test.gtest.xml"
+Directory: /home/nexusjetson/bounding_boxes/build/lidar_detection
+"bounding_box_iou_test" start time: Sep 27 13:29 EDT
+Output:
+----------------------------------------------------------
+-- run_test.py: invoking following command in '/home/nexusjetson/bounding_boxes/build/lidar_detection':
+ - /home/nexusjetson/bounding_boxes/build/lidar_detection/bounding_box_iou_test --gtest_output=xml:/home/nexusjetson/bounding_boxes/build/lidar_detection/test_results/lidar_detection/bounding_box_iou_test.gtest.xml
+Running main() from /opt/ros/humble/src/gtest_vendor/src/gtest_main.cc
+[==========] Running 2 tests from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 2 tests from BoundingBoxIoUTest
+[ RUN      ] BoundingBoxIoUTest.ComputesExact3DOverlap
+[       OK ] BoundingBoxIoUTest.ComputesExact3DOverlap (0 ms)
+[ RUN      ] BoundingBoxIoUTest.IdenticalBoxesHaveIoU1
+[       OK ] BoundingBoxIoUTest.IdenticalBoxesHaveIoU1 (0 ms)
+[----------] 2 tests from BoundingBoxIoUTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 2 tests from 1 test suite ran. (0 ms total)
+[  PASSED  ] 2 tests.
+-- run_test.py: return code 0
+-- run_test.py: inject classname prefix into gtest result file '/home/nexusjetson/bounding_boxes/build/lidar_detection/test_results/lidar_detection/bounding_box_iou_test.gtest.xml'
+-- run_test.py: verify result file '/home/nexusjetson/bounding_boxes/build/lidar_detection/test_results/lidar_detection/bounding_box_iou_test.gtest.xml'
+<end of output>
+Test time =   0.23 sec
+----------------------------------------------------------
+Test Passed.
+"bounding_box_iou_test" end time: Sep 27 13:29 EDT
+"bounding_box_iou_test" time elapsed: 00:00:00
+----------------------------------------------------------
+
+End testing: Sep 27 13:29 EDT
+
+gtest =   0.23 sec*proc
+

@@ -36,11 +36,19 @@ public:
         "bounding_boxes", 
         10);
       
-      // Initialize the GroundRemoval class with a threshold for plane segmentation
-      ground_removal_ = std::make_shared<GroundRemoval>(0.01);
+      // Tuning knobs, exposed as parameters so they can be changed without rebuilding
+      double ground_threshold = this->declare_parameter("ground_threshold", 0.05);
+      double ground_clearance = this->declare_parameter("ground_clearance", 0.15);
+      double cluster_tolerance = this->declare_parameter("cluster_tolerance", 0.075);
+      int min_cluster_size = this->declare_parameter("min_cluster_size", 5);
+      max_cluster_points_ = this->declare_parameter("max_cluster_size", 2000);
 
-      // Initialize the ClusterExtraction class
-      cluster_extraction_ = std::make_shared<ClusterExtraction>(0.2, 5, std::numeric_limits<int>::max());
+      // Initialize the GroundRemoval class with a threshold for plane segmentation
+      ground_removal_ = std::make_shared<GroundRemoval>(ground_threshold, ground_clearance);
+
+      // Initialize the ClusterExtraction class (unbounded here; oversized clusters are reported below)
+      cluster_extraction_ = std::make_shared<ClusterExtraction>(
+        cluster_tolerance, min_cluster_size, std::numeric_limits<int>::max());
 
       // Initialize the BoundingBox class
       bounding_box_ = std::make_shared<BoundingBox>();
@@ -79,6 +87,8 @@ private:
             pcl::PointCloud<pcl::PointXYZRGB> debug_cloud;
             size_t num_rejected = 0;
 
+            std::vector<std::pair<size_t, std::pair<Eigen::Vector4f, Eigen::Vector4f>>> valid_boxes;
+
             // Process each cluster
             for (size_t i = 0; i < clusters.size(); ++i)
             {
@@ -100,6 +110,7 @@ private:
                     // Create a bounding box for each cluster
                     auto marker = bounding_box_->createBoundingBoxMarker(cluster, msg->header, i);
                     marker_array.markers.push_back(marker);
+                    valid_boxes.emplace_back(i, std::make_pair(min_pt, max_pt));
 
                     // Golden-ratio hue spacing keeps neighbouring cluster colors distinct (and away from pure red)
                     float hue = std::fmod(0.3f + i * 0.618f, 0.75f) + 0.1f;
@@ -117,6 +128,27 @@ private:
                     pcl::PointXYZRGB cp(r, g, b);
                     cp.x = p.x; cp.y = p.y; cp.z = p.z;
                     debug_cloud.push_back(cp);
+                }
+            }
+
+            for (size_t i = 0; i < valid_boxes.size(); ++i)
+            {
+                for (size_t j = i + 1; j < valid_boxes.size(); ++j)
+                {
+                    const double overlap_iou = BoundingBox::computeBoxIoU(
+                        valid_boxes[i].second.first,
+                        valid_boxes[i].second.second,
+                        valid_boxes[j].second.first,
+                        valid_boxes[j].second.second);
+
+                    if (overlap_iou > 0.0)
+                    {
+                        RCLCPP_INFO(this->get_logger(),
+                            "Bounding box overlap: cluster %zu vs %zu => IoU %.4f",
+                            valid_boxes[i].first,
+                            valid_boxes[j].first,
+                            overlap_iou);
+                    }
                 }
             }
 

@@ -1,0 +1,6 @@
+[35m[1mConsolidate compiler generated dependencies of target bounding_box_node[0m
+[ 10%] Built target test_node
+[ 40%] Built target preprocessor_node
+[ 45%] Built target ground_removal_node
+[ 70%] Built target cluster_extraction_node
+[ 75%] [32mBuilding CXX object CMakeFiles/bounding_box_node.dir/src/pcl_bounding_box/node.cpp.o[0m

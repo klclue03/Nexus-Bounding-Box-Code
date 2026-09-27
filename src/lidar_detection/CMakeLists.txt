@@ -81,6 +81,7 @@ install(TARGETS
   DESTINATION lib/${PROJECT_NAME})
 
 if(BUILD_TESTING)
+  find_package(ament_cmake_gtest REQUIRED)
   find_package(ament_lint_auto REQUIRED)
   # the following line skips the linter which checks for copyrights
   # comment the line when a copyright and license is added to all source files
@@ -90,6 +91,14 @@ if(BUILD_TESTING)
   # a copyright and license is added to all source files
   set(ament_cmake_cpplint_FOUND TRUE)
   ament_lint_auto_find_test_dependencies()
+
+  ament_add_gtest(bounding_box_iou_test
+    test/bounding_box_iou_test.cpp
+    src/pcl_bounding_box/bounding_box.cpp)
+  target_include_directories(bounding_box_iou_test PUBLIC
+    ${CMAKE_CURRENT_SOURCE_DIR}/src/pcl_bounding_box
+    ${PCL_INCLUDE_DIRS})
+  ament_target_dependencies(bounding_box_iou_test rclcpp sensor_msgs visualization_msgs pcl_conversions pcl_msgs)
 endif()
 
 ament_package()

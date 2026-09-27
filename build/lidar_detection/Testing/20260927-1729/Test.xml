@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Site BuildName="(empty)"
+	BuildStamp="20260927-1729-Experimental"
+	Name="nexusjetson-desktop"
+	Generator="ctest-3.22.1"
+	CompilerName="/usr/bin/c++"
+	CompilerVersion="11.4.0"
+	OSName="Linux"
+	Hostname="nexusjetson-desktop"
+	OSRelease="5.15.148-tegra"
+	OSVersion="#1 SMP PREEMPT Thu Sep 18 15:08:33 PDT 2025"
+	OSPlatform="aarch64"
+	Is64Bits="1"
+	VendorString=""
+	VendorID="Unknown Manufacturer"
+	FamilyID="8"
+	ModelID="0"
+	ProcessorCacheSize="0"
+	NumberOfLogicalCPU="6"
+	NumberOfPhysicalCPU="1"
+	TotalVirtualMemory="3809"
+	TotalPhysicalMemory="7619"
+	LogicalProcessorsPerPhysical="6"
+	ProcessorClockFrequency="0"
+	>
+	<Testing>
+		<StartDateTime>Sep 27 13:29 EDT</StartDateTime>
+		<StartTestTime>1790530182</StartTestTime>
+		<TestList>
+			<Test>./bounding_box_iou_test</Test>
+		</TestList>
+		<Test Status="passed">
+			<Name>bounding_box_iou_test</Name>
+			<Path>.</Path>
+			<FullName>./bounding_box_iou_test</FullName>
+			<FullCommandLine>/usr/bin/python3 "-u" "/opt/ros/humble/share/ament_cmake_test/cmake/run_test.py" "/home/nexusjetson/bounding_boxes/build/lidar_detection/test_results/lidar_detection/bounding_box_iou_test.gtest.xml" "--package-name" "lidar_detection" "--output-file" "/home/nexusjetson/bounding_boxes/build/lidar_detection/ament_cmake_gtest/bounding_box_iou_test.txt" "--command" "/home/nexusjetson/bounding_boxes/build/lidar_detection/bounding_box_iou_test" "--gtest_output=xml:/home/nexusjetson/bounding_boxes/build/lidar_detection/test_results/lidar_detection/bounding_box_iou_test.gtest.xml"</FullCommandLine>
+			<Results>
+				<NamedMeasurement type="numeric/double" name="Execution Time">
+					<Value>0.2306</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="numeric/double" name="Processors">
+					<Value>1</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Completion Status">
+					<Value>Completed</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Command Line">
+					<Value>/usr/bin/python3 "-u" "/opt/ros/humble/share/ament_cmake_test/cmake/run_test.py" "/home/nexusjetson/bounding_boxes/build/lidar_detection/test_results/lidar_detection/bounding_box_iou_test.gtest.xml" "--package-name" "lidar_detection" "--output-file" "/home/nexusjetson/bounding_boxes/build/lidar_detection/ament_cmake_gtest/bounding_box_iou_test.txt" "--command" "/home/nexusjetson/bounding_boxes/build/lidar_detection/bounding_box_iou_test" "--gtest_output=xml:/home/nexusjetson/bounding_boxes/build/lidar_detection/test_results/lidar_detection/bounding_box_iou_test.gtest.xml"</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Environment">
+					<Value>#CTEST_RESOURCE_GROUP_COUNT=</Value>
+				</NamedMeasurement>
+				<Measurement>
+					<Value>-- run_test.py: invoking following command in '/home/nexusjetson/bounding_boxes/build/lidar_detection':
+ - /home/nexusjetson/bounding_boxes/build/lidar_detection/bounding_box_iou_test --gtest_output=xml:/home/nexusjetson/bounding_boxes/build/lidar_detection/test_results/lidar_detection/bounding_box_iou_test.gtest.xml
+Running main() from /opt/ros/humble/src/gtest_vendor/src/gtest_main.cc
+[==========] Running 2 tests from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 2 tests from BoundingBoxIoUTest
+[ RUN      ] BoundingBoxIoUTest.ComputesExact3DOverlap
+[       OK ] BoundingBoxIoUTest.ComputesExact3DOverlap (0 ms)
+[ RUN      ] BoundingBoxIoUTest.IdenticalBoxesHaveIoU1
+[       OK ] BoundingBoxIoUTest.IdenticalBoxesHaveIoU1 (0 ms)
+[----------] 2 tests from BoundingBoxIoUTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 2 tests from 1 test suite ran. (0 ms total)
+[  PASSED  ] 2 tests.
+-- run_test.py: return code 0
+-- run_test.py: inject classname prefix into gtest result file '/home/nexusjetson/bounding_boxes/build/lidar_detection/test_results/lidar_detection/bounding_box_iou_test.gtest.xml'
+-- run_test.py: verify result file '/home/nexusjetson/bounding_boxes/build/lidar_detection/test_results/lidar_detection/bounding_box_iou_test.gtest.xml'
+</Value>
+				</Measurement>
+			</Results>
+			<Labels>
+				<Label>gtest</Label>
+			</Labels>
+		</Test>
+		<EndDateTime>Sep 27 13:29 EDT</EndDateTime>
+		<EndTestTime>1790530182</EndTestTime>
+		<ElapsedMinutes>0</ElapsedMinutes>
+	</Testing>
+</Site>

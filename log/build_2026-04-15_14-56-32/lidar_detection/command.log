@@ -1,2 +1,0 @@
-Invoking command in '/home/nexusjetson/bounding_boxes/build/lidar_detection': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/nexusjetson/bounding_boxes/src/lidar_detection -DCMAKE_INSTALL_PREFIX=/home/nexusjetson/bounding_boxes/install/lidar_detection
-Invoked command in '/home/nexusjetson/bounding_boxes/build/lidar_detection' returned '1': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/nexusjetson/bounding_boxes/src/lidar_detection -DCMAKE_INSTALL_PREFIX=/home/nexusjetson/bounding_boxes/install/lidar_detection

@@ -1,5 +1,44 @@
 #include "bounding_box.hpp"
 
+// Compute the intersection-over-union (IoU) for two 3D axis-aligned boxes.
+double BoundingBox::computeBoxIoU(
+    const Eigen::Vector4f &min_a,
+    const Eigen::Vector4f &max_a,
+    const Eigen::Vector4f &min_b,
+    const Eigen::Vector4f &max_b)
+{
+    const Eigen::Vector3f min_a_3 = min_a.head<3>();
+    const Eigen::Vector3f max_a_3 = max_a.head<3>();
+    const Eigen::Vector3f min_b_3 = min_b.head<3>();
+    const Eigen::Vector3f max_b_3 = max_b.head<3>();
+
+    const Eigen::Vector3f overlap_min = min_a_3.cwiseMax(min_b_3);
+    const Eigen::Vector3f overlap_max = max_a_3.cwiseMin(max_b_3);
+    const Eigen::Vector3f overlap_size = overlap_max - overlap_min;
+
+    const float intersection_volume = std::max(0.0f, overlap_size.x()) *
+                                     std::max(0.0f, overlap_size.y()) *
+                                     std::max(0.0f, overlap_size.z());
+
+    const float box_a_size_x = std::max(0.0f, max_a_3.x() - min_a_3.x());
+    const float box_a_size_y = std::max(0.0f, max_a_3.y() - min_a_3.y());
+    const float box_a_size_z = std::max(0.0f, max_a_3.z() - min_a_3.z());
+    const float box_b_size_x = std::max(0.0f, max_b_3.x() - min_b_3.x());
+    const float box_b_size_y = std::max(0.0f, max_b_3.y() - min_b_3.y());
+    const float box_b_size_z = std::max(0.0f, max_b_3.z() - min_b_3.z());
+
+    const float union_volume = (box_a_size_x * box_a_size_y * box_a_size_z) +
+                              (box_b_size_x * box_b_size_y * box_b_size_z) -
+                              intersection_volume;
+
+    if (union_volume <= 0.0f)
+    {
+        return 0.0;
+    }
+
+    return static_cast<double>(intersection_volume) / static_cast<double>(union_volume);
+}
+
 // Helper function to create the corners of the cube
 std::vector<geometry_msgs::msg::Point> BoundingBox::createCubeCorners(const Eigen::Vector4f &min_point, const Eigen::Vector4f &max_point)
 {
